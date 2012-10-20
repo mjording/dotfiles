@@ -1,0 +1,50 @@
+[alias]
+  graphviz = "!f() { echo 'digraph git {' ; git log --pretty='format:  %h -> { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  who = shortlog -s --
+  m = checkout master
+  # not a fan of random merges
+  pull = pull --ff-only
+  amend = commit --amend
+  lc = log ORIG_HEAD.. --stat --no-merges
+  # from http://blog.kfish.org/2010/04/git-lola.html
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  #from https://git.wiki.kernel.org/index.php/Aliases
+  whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+  whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+  # ignore po files in "git log", sorry translators ;-<
+  slog = "!sh -c 'git log --no-merges $1 `ls | grep -v ^po`' -"
+  # commits not pushed to $1
+  unpushed = cherry -v
+  # what got pushed to master in the last hour
+  #  based on http://stackoverflow.com/questions/3357219/expose-the-date-a-commit-was-pushed-to-a-repository
+  justpushed = log origin/master@{\"1 hour ago\"}..origin/master --
+  # who reverts the most. Totally useless, but I like the name
+  poppers = !"git log -M -C --format=\"format:%aN\" --grep \"Revert\" | sort | uniq -c | sort -n"
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+[mergetool "vimdiff3"]
+   cmd = vim -f -d -c \"wincmd J\" \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+
+[mergetool]
+  keepBackup = true
