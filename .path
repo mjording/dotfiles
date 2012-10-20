@@ -1,3 +1,1 @@
-if [ -d "$HOME/bin" ] ; then
-  export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:/Applications/Postgres.app/Contents/MacOS/bin:$HOME/bin/neo4j/bin:/usr/local/share/npm/bin:$PATH"
-fi
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
