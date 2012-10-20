@@ -231,7 +231,7 @@
 	<key>WindowTitle</key>
 	<string></string>
 	<key>name</key>
-	<string>mjording</string>
+	<string>doormates</string>
 	<key>shellExitAction</key>
 	<integer>2</integer>
 	<key>type</key>
