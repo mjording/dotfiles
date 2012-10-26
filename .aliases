@@ -87,7 +87,6 @@ done
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
-
 alias pryr="bunx pry -r ./config/environment"
 alias netstat_osx="sudo lsof -i -P"
 alias bunrake='bundle exec rake'
