@@ -15,4 +15,5 @@ else
   fi
 fi
 unset doIt
+ln /System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc /usr/local/bin
 source ~/.bash_profile
