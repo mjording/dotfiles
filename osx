@@ -5,6 +5,7 @@ sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
@@ -503,10 +504,27 @@ defaults write com.twitter.twitter-mac ShowFullNames -bool true
 # Hide the app in the background if it’s not the front-most window
 # defaults write com.twitter.twitter-mac HideInBackground -bool true
 
-# set new bash as default login shell
-#sudo sed -ie '\/bin\/bash/i\
-#\/usr\/local\/bin\/bash
-#' /etc/shells
+# set brewed zsh as a valid login shell
+if grep -q '/usr/local/bin/zsh' /etc/shells; then echo "brewed zsh is already a valid login shell"; 
+else
+  sudo sed -ie '\/bin\/zsh/i\
+  \/usr\/local\/bin\/zsh
+  ' /etc/shells
+fi
+
+# set brewed bash as a valid login shell
+if grep -q '/usr/local/bin/bash' /etc/shells; then echo "brewed bash is already a valid login shell"; 
+else
+  sudo sed -ie '\/bin\/bash/i\
+  \/usr\/local\/bin\/bash
+  ' /etc/shells
+fi
+
+#set brewed zsh as default login shell
+sudo chsh -s /usr/local/bin/zsh $USER
+
+#set brewed bash as default login shell
+#chsh -s /usr/local/bin/bash $USER
 
 ###############################################################################
 # Kill affected applications                                                  #
