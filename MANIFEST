@@ -1,0 +1,4 @@
+dotfiles := bashrc bash_profile bash_prompt path wgetrc aliases exports functions inputrc custom.vim
+
+taps := homebrew/dupes
+packages := coreutils findutils bash bash-completion zsh zsh-lovers zsh-completions wget --enable-iri homebrew/dupes/grep ack git tree qt macvim redis tmux wemux
