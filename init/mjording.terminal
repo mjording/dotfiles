@@ -142,14 +142,15 @@
 	AAAZAAAAAAAAAAAAAAAAAAAA2Q==
 	</data>
 	<key>BackgroundBlur</key>
-	<real>0.34752206583969464</real>
+	<real>0.0</real>
 	<key>BackgroundColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
-	AAGGoKMHCA9VJG51bGzTCQoLDA0OV05TV2hpdGVcTlNDb2xvclNwYWNlViRjbGFzc0cw
-	IDAuNzUAEAOAAtIQERITWiRjbGFzc25hbWVYJGNsYXNzZXNXTlNDb2xvcqISFFhOU09i
-	amVjdF8QD05TS2V5ZWRBcmNoaXZlctEXGFRyb290gAEIERojLTI3O0FIUF1kbG5wdYCJ
-	kZSdr7K3AAAAAAAAAQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAALk=
+	AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NPECcw
+	LjEyNzQyOTM2NDIgMC4wNzc5Mzc2NTYxIDAuMzI2Mjk5MjUyNwAQAYAC0hAREhNaJGNs
+	YXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNLZXllZEFyY2hp
+	dmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCVoKmxtL3P0tcAAAAAAAABAQAAAAAA
+	AAAZAAAAAAAAAAAAAAAAAAAA2Q==
 	</data>
 	<key>Bell</key>
 	<false/>
@@ -196,7 +197,7 @@
 	AAAZAAAAAAAAAAAAAAAAAAAA2Q==
 	</data>
 	<key>ShowActiveProcessInTitle</key>
-	<true/>
+	<false/>
 	<key>ShowCommandKeyInTitle</key>
 	<false/>
 	<key>ShowDimensionsInTitle</key>
@@ -229,11 +230,15 @@
 	<key>VisualBell</key>
 	<true/>
 	<key>WindowTitle</key>
-	<string></string>
+	<string>mjording@Grackle: ~/src/ga_dotfiles</string>
+	<key>columnCount</key>
+	<integer>159</integer>
 	<key>name</key>
 	<string>mjording</string>
+	<key>rowCount</key>
+	<integer>31</integer>
 	<key>shellExitAction</key>
-	<integer>2</integer>
+	<integer>0</integer>
 	<key>type</key>
 	<string>Window Settings</string>
 </dict>
