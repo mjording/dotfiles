@@ -1,1 +1,1 @@
-export PATH="${PATH}:/Users/mjording/.sm/bin:/Users/mjording/.sm/pkg/active/bin:/Users/mjording/.sm/pkg/active/sbin"
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH:$HOME/bin"
