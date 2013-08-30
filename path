@@ -1,1 +1,1 @@
-export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH:$HOME/bin:$HOME/bin/adt-bundle/sdk/tools"
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/bin:$HOME/bin:$HOME/Qt5.1.0/5.1.0/clang_64/bin:node_modules/.bin:/usr/local/share/npm/bin:$PATH"
